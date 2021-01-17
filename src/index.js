@@ -5,17 +5,21 @@ import {Provider} from 'react-redux';
 import {createStore, applyMiddleware, compose} from 'redux';
 import thunk from 'redux-thunk';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import destinationReducer from './reducers/destinationReducer';
 import App from './App';
+import './App.css';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
 
+// create store and use applyMiddleware to enable thunk
+let store = createStore(destinationReducer, composeEnhancers(applyMiddleware(thunk)));
 
 // Wrap entire app in provider to give all components access to the store
 ReactDOM.render(
-  <React.StrictMode>
     <Provider store={store}>
-      <App />
-    </Provider>
-  </React.StrictMode>,
+      <Router>
+        <App />
+      </Router>
+    </Provider>,
   document.getElementById('root')
 );
