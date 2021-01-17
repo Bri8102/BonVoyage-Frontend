@@ -2,7 +2,6 @@ import React, { Component }from 'react';
 import { connect } from 'react-redux';
 import {Col, Button, Form, FormGroup, Label, Input } from 'reactstrap';
 import { addDestination } from '../actions/destinationActions';
-import { Component } from 'react';
 
 class DestinationInput extends Component {
 
