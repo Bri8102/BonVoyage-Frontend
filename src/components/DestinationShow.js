@@ -33,7 +33,7 @@ const DestinationShow = props => {
         <Button onClick={handleVisited} className='VisitedButton' style={{alignItems: 'center' }}>
           {destination && destination.visited === false ? 'Add to Visited' : 'You Have Visited'}
         </Button>
-        <Button onClick={handleBucketList} className='BucketListButton'>
+        <Button onClick={handleBucketList} className='WishListButton'>
           {destination && destination.bucket_list === false ? 'Add to Bucket List' : 'This Is In your Bucket List'}
         </Button>
         <Button onClick={handleDelete} className='DeleteButton'>Delete This Destination</Button>
