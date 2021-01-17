@@ -6,7 +6,7 @@ const WishList = props => {
 
   return (
     <div className='DestinationContainer'>
-      <h3 style={{color: 'white', fontWeight: '700'}}>Bucket List<br/></h3>
+      <h3 style={{color: 'white', fontWeight: '700'}}>Wish List<br/></h3>
       <small style={{color: 'hotpink', fontWeight:'600'}}>Dream Destinations</small>
 
       {props.destinations.map(destination => {

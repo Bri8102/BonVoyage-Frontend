@@ -56,19 +56,19 @@ export const fetchDestinations = () => {
     };
   };
 
-  // add destination to bucketlist with fetch
-   export const toggleBucketList = (destination, destinationId) => {
-    const updatedBucketList = {...destination, bucket_list: !destination.bucket_list};
+  // add destination to wishlist with fetch
+   export const toggleWishList = (destination, destinationId) => {
+    const updatedWishList = {...destination, bucket_list: !destination.bucket_list};
   
     return (dispatch) => {
       fetch(`http://localhost:3000/destinations/${destinationId}`, {
         method: 'PATCH',
         headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify({destination: updatedBucketList})
+        body: JSON.stringify({destination: updatedWishList})
       })
       .then(res => res.json())
       .then(destination => {
-        dispatch({type: 'TOGGLE_BUCKET_LIST', payload: destination})
+        dispatch({type: 'TOGGLE_WISH_LIST', payload: destination})
       })
     };
   };

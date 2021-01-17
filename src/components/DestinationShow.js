@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Card, CardBody, CardTitle, CardImg, Button } from 'reactstrap';
 import Activities from '../containers/Activities';
-import { deleteDestination, toggleVisited, toggleBucketList } from '../actions/destinationActions';
+import { deleteDestination, toggleVisited, toggleWishList } from '../actions/destinationActions';
 
 
 const DestinationShow = props => {
@@ -19,8 +19,8 @@ const DestinationShow = props => {
     props.toggleVisited(destination, destination.id)
   }
 
-  const handleBucketList = () => {
-    props.toggleBucketList(destination, destination.id)
+  const handleWishList = () => {
+    props.toggleWishList(destination, destination.id)
   }
 
   return (
@@ -33,10 +33,10 @@ const DestinationShow = props => {
         <Button onClick={handleVisited} className='VisitedButton' style={{alignItems: 'center' }}>
           {destination && destination.visited === false ? 'Add to Visited' : 'You Have Visited'}
         </Button>
-        <Button onClick={handleBucketList} className='WishListButton'>
-          {destination && destination.bucket_list === false ? 'Add to Bucket List' : 'This Is In your Bucket List'}
+        <Button onClick={handleWishList} className='WishListButton'>
+          {destination && destination.bucket_list === false ? 'Add to Wish List' : 'This Is In your Wish List'}
         </Button>
-        <Button onClick={handleDelete} className='DeleteButton'>Delete This Destination</Button>
+        <Button onClick={handleDelete} className='DeleteButton'>Delete Destination</Button>
       </Card>
 
       <Activities destination={destination} />
@@ -44,4 +44,4 @@ const DestinationShow = props => {
   );
 };
 
-export default connect(null, { deleteDestination, toggleVisited, toggleBucketList })(DestinationShow);
+export default connect(null, { deleteDestination, toggleVisited, toggleWishList })(DestinationShow);

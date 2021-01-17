@@ -20,12 +20,12 @@ class DestinationInput extends Component {
     handleSubmit = e => {
         e.preventDefault();
         const path = `/destinations`;
-        this.props.addDestination(this.state,this.props.history, path)
+        this.props.addDestination(this.state,this.props.history, path);
         this.setState({
             name: '',
             country: '',
             image: ''
-        })
+        });
     };
 
     render() {
