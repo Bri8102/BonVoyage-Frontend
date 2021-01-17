@@ -25,7 +25,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: teal;
 }
 
 @keyframes App-logo-spin {
@@ -36,3 +36,195 @@
     transform: rotate(360deg);
   }
 }
+
+
+.HomePage {
+  background: url(https://wallpaperaccess.com/full/620555.jpg) 
+  no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  padding: 400px;
+  background-color: #292929;
+  color: #ffffff;
+  font-family: Verdana, Geneva, sans-serif;
+  text-align: center;
+  opacity: 0.8;
+}
+
+.HomePage h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  color: #94cfff;
+  text-transform: uppercase;
+  margin: 0;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  font-size: 8rem;
+  transform: translate(-50%, -50%);
+  /* opacity: 0.95; */
+}
+
+.HomePage h3 {
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin: 0;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  font-size: 3em;
+  transform: translate(-50%, -50%);
+  color: #000000;
+}
+
+.NavbarContainer {
+  background-color: rgb(170, 148, 148, 0.7);
+  width: 100%;
+  padding: 0;
+  list-style: vertical;
+  margin-left: 0px;
+  display: inline-block;
+  text-align: center;
+  align-items: center;
+  /* opacity: 0.5; */
+}
+
+
+.NavbarLink {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  padding: 14px 16px;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 20px;
+}
+
+.NavbarLink:hover {
+  color: rgb(4, 47, 126);
+  text-decoration: none;
+}
+
+.DestinationContainer {
+  background-color: rgb(36, 36, 36, 0.8);
+  color: white;
+  text-transform: uppercase;
+}
+
+.DestinationFormContainer {
+  margin: 30px;
+  padding: 30px;
+  background-color: rgb(36, 36, 36);
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+}
+
+.NewDestinationBtn {
+  justify-content: center;
+  background: rgb(192, 71, 137);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  padding: 4px 14px;
+  border-radius: 10px;
+  /* border: 2px solid #ffffff; */
+  text-align: center;
+  font-size: 28px;
+  font-family: Verdana, Geneva, sans-serif;
+  color: rgb(252, 252, 252);
+}
+.DestinationContainer {
+  padding: 20px;
+  color: rgb(146, 155, 155);
+  font-family: Verdana, Geneva, sans-serif;
+  text-align: center;
+}
+
+.DestinationCard {
+  color: rgb(0, 204, 255);
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 17px;
+  float: left;
+  margin: 1.5%;
+  text-align: center;
+  width: 30%;
+  height: 300px;
+  background: whitesmoke;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.DestinationCard:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0,0,0,0.22);
+  cursor: 'pointer';
+  text-decoration: none;
+}
+
+.DestinationForm button {
+  color: #ffffff;
+  background-color:  rgb(194, 47, 174);
+}
+
+.DestinationForm h5 {
+text-align: center;
+color:  rgb(194, 47, 174);
+text-transform: uppercase;
+font-family: 'Roboto', sans-serif;
+font-weight: 900;
+font-size: xx-large;
+padding-bottom: 10px;
+}
+
+.DestinationImage {
+  align-content: center;
+  height: 200px;
+  width: 400px;
+}
+
+.DestinationShow button {
+  background-color: rgb(194, 47, 174);
+  display: inline-block;
+  text-align: center;
+}
+
+.DestinationShow {
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: xx-large;
+}
+
+.ActivityForm button {
+  color: #ffffff;
+  background-color: rgb(194, 47, 174);
+  text-align: center;
+}
+
+.ActivityForm h5 {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: xx-large;
+  padding-bottom: 10px;
+  }
+
+  .ActivityForm {
+    text-align: center;
+  }
+
+  .VisitedButton, .WishListButton, .DeleteButton {
+    display: inline-block; 
+    margin: 0 auto;
+    width: 250px;
+  }
+
+
+
