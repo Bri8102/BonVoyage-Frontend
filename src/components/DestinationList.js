@@ -13,8 +13,9 @@ const DestinationsList = props => {
         <Link key={destination.id} to={`/destinations/${destination.id}`}>
           <Card className = 'DestinationCard'>
             <CardBody>
-              <CardTitle>{destination.name} - {destination.country}</CardTitle>
+              <CardTitle>{destination.name}</CardTitle>
               <CardImg className='DestinationImage' src={destination.image} alt={destination.name} />
+              <CardTitle>{destination.country}</CardTitle>
             </CardBody>
           </Card>
         </Link>
