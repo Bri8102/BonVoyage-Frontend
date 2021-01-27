@@ -7,7 +7,7 @@ import { deleteDestination, toggleVisited, toggleWishList } from '../actions/des
 
 const DestinationShow = props => {
 
-  let destination = props.destinations.filter(destination => destination.id == props.match.params.id)[0];
+  let destination = props.destinations.filter(destination => destination.id === props.match.params.id)[0];
 
   const handleDelete = () => {
     props.deleteDestination(destination.id);
