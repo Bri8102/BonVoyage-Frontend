@@ -1,6 +1,6 @@
 # React, Redux, and Rails Project
 
-#Bon Voyage
+# Bon Voyage
 Travel Destination finder. This app lists different locations around the world created by users, including information about activities within each destination.
 
 ## Built With
