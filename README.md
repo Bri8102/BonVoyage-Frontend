@@ -1,5 +1,8 @@
 # React, Redux, and Rails Project
 
+#Bon Voyage
+Travel Destination finder. This app lists different locations around the world created by users, including information about activities within each destination.
+
 ## Built With
 - Ruby
 - Rails and ActiveRecord
@@ -33,7 +36,8 @@ npm install
 npm start
 ```
 # Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change. 
+Please contact me at boniruedwards@gmail.com
 
 # License
 <a href="https://choosealicense.com/licenses/mit/">MIT</a>
